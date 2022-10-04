@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Encriptador</title>
+    <link rel="stylesheet" href="Estilo.css"/>
+</head>
+<body>
+    <header >
+    </header>
+    <main>
+        <section class="contenedor">
+            <textarea class="mensaje"  placeholder="Ingrese el texto aqui"></textarea>
+                &#9888; Solo minusculas y sin acentos
+                <div class="botones">
+                    <button onclick="Encriptar()" class="encriptar">Encriptar</button>
+                    <button onclick="Desencriptar()" class="desencriptar">Desencriptar</button>
+                </div>
+        </section>
+        <section class="encriptamiento">
+            <textarea  class="resultado"></textarea>
+            <button onclick="Copiar()" class="copiar">Copiar</button>
+            <div id="caja">
+                <div class="muneco"></div>
+                <p class="mensaje-no-encontrado">Ningun mensaje fue encontrado</p>
+                <p class="escribir">Ingresa el texto que deseeas encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &#169; David Alejandro Cortes Ramirez
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js"></script>
+    <script src="Encriptador.js"></script>
+</body>
+</html>

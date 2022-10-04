@@ -1,0 +1,419 @@
+body{
+    background: #E5E5E5;
+}
+header{
+    background: url(imagenes/Logo.png);
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    width: 940px auto;
+}
+.contenedor{
+    width: 30px 150px;
+    margin: 30px 0px 30px 200px;
+    display: inline-block;
+}
+.mensaje{
+    background-color: #E5E5E5;
+    position: relative;
+    width: 500px;
+    height: 400px;
+    display: block;
+    color: #0A3871;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 32px;
+    border: 0;
+    outline: none;
+    resize: none;
+}
+.mensaje::placeholder{
+    color: #0A3871;
+}
+.botones{
+    padding-top: 5px;
+}
+.encriptar{
+    cursor: pointer;
+    padding: 11px; 
+    width: 280px;
+    height: 60px;    
+    background: #0A3871;
+    border-radius: 24px;
+    color: #fff;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+.encriptar:hover {
+    background-color: #124a8f;
+}
+.desencriptar{
+    cursor: pointer;
+    padding: 11px; 
+    width: 280px;
+    height: 60px;    
+    background: #D8DFE8;
+    border-radius: 24px;
+    color: #000;
+    margin-left: 10px;
+    border: 1px solid #000;
+}
+.desencriptar:hover {
+    background-color: #d3e6e7;
+}
+.encriptamiento {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 480px ;
+    margin: 0 auto 30px 170px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 20px 0; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    vertical-align: top;
+}
+.resultado{
+    width: 300px;
+    vertical-align: top;
+    visibility: hidden;
+    border: 0;
+    outline: none;
+    resize: none;
+    padding-left: 20px;
+}
+.muneco{
+    background: url(imagenes/Muneco.png);
+    display: block;
+    padding: 40px 20px 250px 20px;
+    background-repeat: no-repeat;
+}
+p{
+    text-align: center;
+}
+.mensaje-no-encontrado{
+    font-weight: bold;
+    font-size: 20px;;
+}
+.escribir{
+    font-family: serif;
+    font-size: 15px;
+}
+.copiar{
+    display: block;
+    cursor: pointer;
+    padding: 11px; 
+    width: 200px;
+    height: 50px;    
+    background: #D8DFE8;
+    border-radius: 24px;
+    color: #000;
+    border: 1px solid #000;
+    position: absolute;
+    visibility: hidden;
+    margin: 350px 0;
+    margin-left: 80px;
+}
+.copiar:hover {
+    background-color: #d3e6e7;
+}
+footer{
+    text-align: center;
+}
+@media screen and (max-width:320px){
+    .contenedor {
+        width: 230px;
+        display: block;
+        margin: 20px;
+    }
+    .mensaje {
+        background-color: #E5E5E5;
+        position: relative;
+        width: 250px;
+        height: 500px auto;
+        display: block;
+        color: #0A3871;
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 15px;
+        border: 0;
+        outline: none;
+        resize: none;
+    }
+    .botones{
+        width: 250px;
+        padding: 0 auto;
+    }
+    .encriptar {
+        width: 110px;
+        height: 40px;
+        display: inline-block;
+    }
+    
+    .desencriptar {
+        width: 110px ;
+        height: 40px;
+        display: inline-block;
+    }
+    .encriptamiento {
+        position: relative;
+        display: block;
+        width: 250px;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 24px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        margin: 10px;
+    }
+    .resultado{
+        width: auto;
+    }
+    .copiar{
+        position: absolute;
+        margin: 110px 0 0 70px;
+        width: 110px;
+        height: 40px;
+    }
+    .muneco{
+        position: absolute;
+        background-image: url();
+        margin: 80px 0 0 100px;
+        padding: 50px;
+    }
+}
+@media screen and (min-width:321px) and (max-width:480px) {
+    .contenedor {
+        width: 350px;
+        display: block;
+        margin: 20px;
+    }
+    .mensaje {
+        background-color: #E5E5E5;
+        position: relative;
+        width: 350px;
+        height: 500px auto;
+        display: block;
+        color: #0A3871;
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 25px;
+        border: 0;
+        outline: none;
+        resize: none;
+    }
+    .botones{
+        width: 350px;
+        padding: 0 auto;
+    }
+    .encriptar {
+        width: 130px;
+        height: 40px;
+        display: inline-block;
+    }
+    
+    .desencriptar {
+        width: 130px ;
+        height: 40px;
+        display: inline-block;
+    }
+    .encriptamiento {
+        position: relative;
+        display: block;
+        width: auto;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 24px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        margin: 10px;
+    }
+    .copiar{
+        position: absolute;
+        margin: 80px 0 0 80px;
+    }
+    .muneco{
+        position: absolute;
+        background-image: url(imagenes/diamod.png);
+        margin: 60px 0 0 130px;
+        padding: 50px;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+    header {
+        background: url(imagenes/Logo-1.png);
+        background-repeat: no-repeat;
+        width: auto;
+        padding-top: 60px;
+    }
+    
+    .contenedor {
+        width: auto;
+        display: block;
+        margin: 20px 10%;
+    }
+    
+    .mensaje {
+        background-color: #E5E5E5;
+        position: relative;
+        width: 650px auto;
+        height: 500px auto;
+        display: block;
+        color: #0A3871;
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 25px;
+        border: 0;
+        outline: none;
+        resize: none;
+    }
+    .botones{
+        width: auto ;
+    }
+    .encriptar {
+        width: 195px;
+        display: inline-block;
+    }
+    
+    .desencriptar {
+        width: 195px ;
+        display: inline-block;
+    }
+    
+    .encriptamiento {
+        position: relative;
+        display: block;
+        width: auto;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 24px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        margin: 40px;
+    }
+    
+    .copiar {
+        position: absolute;
+        margin: 100px 35%;
+    }
+    
+    .muneco {
+        background: url();
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    header {
+        background: url(imagenes/Logo-1.png);
+        background-repeat: no-repeat;
+        width: auto;
+        padding-top: 50px;
+    }
+    .contenedor {
+        width: auto;
+        margin: 20px 40px;
+    }
+    .mensaje {
+        background-color: #E5E5E5;
+        width: 450px;
+        height: 550px;
+        font-size: 25px;
+    }
+    .encriptar {
+        width: 250px ;
+    }
+    
+    .desencriptar {
+        width: 250px;
+    }
+    .encriptamiento {
+        width: 896px;
+        height: 350px;
+        background-color: #fff;
+        border-radius: 24px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        margin: 30px 40px;
+    }
+    .copiar{
+        margin: 270px 0 0 350px;
+    }
+    .muneco{
+        background: url(imagenes/diamod.png);
+        background-repeat: no-repeat;
+        padding: 45px;
+        margin: 30px  0 0 320px;
+    } 
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+   header {
+        background: url(imagenes/Logo-1.png);
+        background-repeat: no-repeat;
+        width: auto;
+        padding-top: 60px;
+    }
+    
+    .contenedor {
+        width: auto;
+        display: inline-block;
+        margin: 20px 40px;
+    }
+    
+    .mensaje {
+        background-color: #E5E5E5;
+        position: relative;
+        width: 580px;
+        height: 530px;
+        display: block;
+        color: #0A3871;
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 25px;
+        border: 0;
+        outline: none;
+        resize: none;
+    }
+    
+    .encriptar {
+        width: 180px auto;
+    }
+    
+    .desencriptar {
+        width: 180px auto;
+    }
+    
+    .encriptamiento {
+        display: inline-block;
+        margin: 0;
+        width: 330px;
+        height: 600px;
+    }
+    
+    .resultado {
+        width: auto;
+    }
+    
+    .copiar {
+        position: absolute;
+        text-align: center;
+    }
+}
+@media screen and (min-width:1201px) and (max-width:1280px){
+    .contenedor {
+        width: 30px 150px;
+        margin: 20px 0 0 40px;
+        display: inline-block;
+    }
+    .mensaje{
+        width: 650px;
+        height: 550px;
+    }
+    .encriptamiento{
+        margin: 0 auto 30px 70px;
+        height: 620px;
+    }
+    .muneco{
+        margin-top: 60px;
+    }
+    .copiar{
+        margin-top: 500px;
+    }
+}
