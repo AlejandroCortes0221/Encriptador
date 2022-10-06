@@ -382,9 +382,10 @@ footer{
     
     .encriptamiento {
         display: inline-block;
-        margin: 0;
+        margin: 5px auto;
         width: 330px;
         height: 600px;
+        vertical-align: right;
     }
     
     .resultado {
@@ -396,7 +397,7 @@ footer{
         text-align: center;
     }
 }
-@media screen and (min-width:1201px) and (max-width:1280px){
+@media screen and (min-width:1201px) and (max-width:1473px){
     .contenedor {
         width: 30px 150px;
         margin: 20px 0 0 40px;
@@ -409,6 +410,28 @@ footer{
     .encriptamiento{
         margin: 0 auto 30px 70px;
         height: 620px;
+    }
+    .muneco{
+        margin-top: 60px;
+    }
+    .copiar{
+        margin-top: 500px;
+    }
+}
+@media screen and (min-width: 1474px) and (max-width: 2150px) {
+    .contenedor {
+        width: 30px 150px;
+        margin: 20px 0 0 130px;
+        display: inline-block;
+    }
+    .mensaje{
+        width: 800px ;
+        height: 750px;
+    }
+    .encriptamiento{
+        margin: 0 auto 30px 70px;
+        height: 850px;
+        padding: 0 50px;
     }
     .muneco{
         margin-top: 60px;
