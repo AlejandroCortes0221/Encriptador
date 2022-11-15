@@ -1,6 +1,6 @@
 const mensaje = document.querySelector(".mensaje");
 const Caja = document.getElementById("caja");
-const resultado = document.querySelector(".resultado");
+const Resultado = document.querySelector(".resultado");
 const copiar = document.querySelector(".copiar");
 const Reglas = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
 const Acentuaciones = ["á","é","í","ó","ú"];
@@ -33,10 +33,10 @@ function Encriptar(){
     } 
     else{
         Caja.remove();
-        resultado.value = cadena;
-        resultado.style.height="auto";
-        resultado.style.height="auto";
-        resultado.style.visibility="visible";
+        Resultado.value = cadena;
+        Resultado.style.height="auto";
+        Resultado.style.height="auto";
+        Resultado.style.visibility="visible";
         copiar.style.visibility="visible";
         copiar.style.display="relative";
     }
@@ -71,10 +71,10 @@ function Desencriptar(){
         
             }else{
                 Caja.remove();
-                resultado.value = cadena;
-                resultado.style.height="auto";
-                resultado.style.height="auto";
-                resultado.style.visibility="visible";
+                Resultado.value = cadena;
+                Resultado.style.height="auto";
+                Resultado.style.height="auto";
+                Resultado.style.visibility="visible";
                 copiar.style.visibility="visible";
             }
     }
@@ -82,8 +82,8 @@ function Desencriptar(){
 }
 
 function Copiar(){
-    resultado.select();
-    navigator.clipboard.writeText(resultado.value);
+    Resultado.select();
+    navigator.clipboard.writeText(Resultado.value);
     Swal.fire(
   'Texto copiado',
   'Has click en el boton',
